@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Chatbot</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* Apply background image and ensure full height */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('stars-galaxy.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh; /* Full viewport height */
+        }
+
+        header {
+            
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+
+
+        main {
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn-chatbot {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .btn-chatbot:hover {
+            background-color: #0056b3;
+        }
+
+        iframe {
+            padding-top: 60px;
+            width: 100%; /* Full width */
+            height:100%; /* Height for the chatbot iframe */
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pod.html">Picture of the Day</a></li>
+                <li><a href="./explore.html">Explore</a></li>
+                <li><a href="./chatbot.html">ChatBot</a></li>
+              
+                
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Chatbot iframe -->
+        <iframe src="https://khababakhtar-chatbot.hf.space" frameborder="0"></iframe>
+
+
+    </main>
+
+
+</body>
+</html>

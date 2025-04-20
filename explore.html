@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pod.html">Picture of the Day</a></li>
+                <li><a href="./explore.html">Explore</a></li>
+                <li><a href="./chatbot.html">ChatBot</a></li>
+              
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="solar-system-container">
+    <div class="solar-system" id="solarSystem">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search planets...">
+            <div id="autocompleteResults" class="autocomplete-results"></div>
+        </div>
+
+        <div class="shooting-star"></div>
+
+        <div class="sun"></div>
+
+        <div class="planet-info" id="planetInfo" style="display: none;"></div>
+
+        <div class="focused-planet-info" id="focusedPlanetInfo" style="display: none;">
+            <h2 id="focusedPlanetName"></h2>
+            <p id="focusedPlanetDescription"></p>
+            <button onclick="handlePlanetClick(null)">Return to Solar System</button>
+        </div>
+
+        <button class="solar-system-facts-button" onclick="toggleSolarSystemFacts()">
+            Solar System Facts
+        </button>
+    </div>
+
+    <div id="solarSystemFacts" class="solar-system-facts" style="display: none;">
+        <div id="factsDragHandle" class="facts-drag-handle">
+            Solar System Facts
+            <button id="closeFactsButton" class="close-button">×</button>
+        </div>
+        <ul>
+            <li>The Solar System formed about 4.6 billion years ago.</li>
+            <li>It consists of the Sun, 8 planets, dwarf planets, and various small bodies.</li>
+            <li>The Sun contains 99.86% of the Solar System's known mass.</li>
+            <li>The four inner planets are called terrestrial planets.</li>
+            <li>The four outer planets are called gas giants.</li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="explore.js"></script> <!-- Link JS file -->
+</body>
+</html>

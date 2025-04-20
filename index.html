@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Space - Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aestroid.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pod.html">Picture of the Day</a></li>
+                <li><a href="./explore.html">Explore</a></li>
+                <li><a href="./chatbot.html">ChatBot</a></li>
+              
+                
+
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="landing">
+        <div class="overlay">
+            <h1>Explore the Universe with Our AI Chatbot</h1>
+            <p>Ask any question about space and let AI guide you through the cosmos.</p>
+            <a href="./chatbot.html" class="btn">Start Chatting</a>
+        </div>
+    </section>
+
+    <!-- Asteroid Section -->
+    <section id="asteroids" class="asteroid-section">
+        <div class="container">
+            <h2>Asteroids in Space</h2>
+            <p>Did you know? There are thousands of asteroids in our solar system. Explore the latest data from NASA's NeoWs API!</p>
+            
+            <!-- Date Range Selection -->
+            <div class="date-picker">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate">
+                <button id="loadAsteroids" class="btn">Load Asteroid Info</button>
+            </div>
+            
+            <!-- Display Asteroids -->
+            <div id="asteroidInfo" class="asteroid-info"></div>
+        </div>
+    </section>
+
+        <script src="script.js"></script>
+</body>
+</html>
